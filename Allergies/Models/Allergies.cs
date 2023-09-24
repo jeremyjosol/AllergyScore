@@ -5,7 +5,7 @@ namespace Allergies.Models
 {
   public class AllergenScore
   {
-    Dictionary<string, int> AllergenScores = new Dictionary<string, int>(){
+    public static Dictionary<string, int> allergenScores = new Dictionary<string, int>(){
       {"Eggs", 1},
       {"Peanuts", 2},
       {"Shellfish", 4},
