@@ -15,12 +15,26 @@ namespace Allergies.Models
       {"Pollen", 64},
       {"Cats", 128}
     };
-    public int TotalAllergyScore { get; set; }
+    public AllergenScore()
+    {
+      TotalAllergyScore = 0;
+    }
+    public static int TotalAllergyScore { get; set; }
     public static int GetAllergyScore(string allergy)
     {
       if (allergenScores.ContainsKey(allergy))
       {
         return allergenScores[allergy];
+      }
+      return 0;
+    }
+    public static int CalculateTotalAllergyScore(string allergy)
+    {
+      if (allergenScores.ContainsKey(allergy))
+      {
+        int currentScore = allergenScores[allergy];
+        TotalAllergyScore += currentScore;
+        return currentScore;
       }
       return 0;
     }
