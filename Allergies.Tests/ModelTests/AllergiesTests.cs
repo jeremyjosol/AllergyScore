@@ -22,5 +22,11 @@ namespace Allergies.Tests
       Assert.AreEqual(1, allergyScore);
       Assert.AreEqual(128, allergyScore2);
     }
+    [TestMethod]
+    public void CalculateTotalAllergyScore_IncrementsAllergyScorePerAllergenInput_Int()
+    {
+      int totalAllergyScore = AllergenScore.CalculateTotalAllergyScore("Eggs");
+      Assert.AreEqual(1, totalAllergyScore);
+    }
   }
 }
