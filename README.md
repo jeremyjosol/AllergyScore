@@ -2,15 +2,15 @@
 
 This is an application that practices the implementation of C# Dictionaries and includes methods that adds allergen scores to a user's total score based on the allergen that a user inputs, for example:
 
-allergen     score
-eggs         1
-peanuts      2
-shellfish    4
-strawberries 8
-tomatoes     16
-chocolate    32
-pollen       64
-cats         128
+allergen     score  
+eggs         1  
+peanuts      2  
+shellfish    4  
+strawberries 8  
+tomatoes     16  
+chocolate    32  
+pollen       64  
+cats         128  
 
 A user input of `"Chocolate"` is 32 which then their total score becomes 32 and if the user inputs another allergen `"Pollen"`, their total score increments and becomes 96. 
 
