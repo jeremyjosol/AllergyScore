@@ -3,7 +3,7 @@
 This is an application that practices the implementation of C# Dictionaries and includes methods that adds allergen scores to a user's total score based on the allergen that a user inputs, for example:
 
 ```csharp
-// {Allegern, score}
+// {Allergen, score}
 {"Eggs", 1}
 {"Peanuts", 2}
 {"Shellfish, 4}
