@@ -2,8 +2,8 @@
 
 This is an application that practices the implementation of C# Dictionaries and includes methods that adds allergen scores to a user's total score based on the allergen that a user inputs, for example:
 
-Allergen | Score
 ```csharp
+// {Allegern, score}
 {"Eggs", 1}
 {"Peanuts", 2}
 {"Shellfish, 4}
@@ -11,7 +11,7 @@ Allergen | Score
 {"Tomatoes", 16}
 {"Chocolate", 32}
 {"Pollen", 64}
-{"Cats, 128}
+{"Cats", 128}
 ```
 A user input of `"Chocolate"` is 32 which then the user's total score becomes 32. If the user inputs another allergen `"Pollen"`, their total score increments and becomes 96. 
 
