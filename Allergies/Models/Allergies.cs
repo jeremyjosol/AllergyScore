@@ -15,6 +15,7 @@ namespace Allergies.Models
       {"Pollen", 64},
       {"Cats", 128}
     };
+    public int TotalAllergyScore { get; set; }
     public static int GetAllergyScore(string allergy)
     {
       if (allergenScores.ContainsKey(allergy))
