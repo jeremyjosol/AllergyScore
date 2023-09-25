@@ -4,13 +4,13 @@ This is an application that practices the implementation of C# Dictionaries and 
 
 ```csharp
 // {Allergen, score}
-{"Eggs", 1}
-{"Peanuts", 2}
-{"Shellfish", 4}
-{Strawberries", 8}
-{"Tomatoes", 16}
-{"Chocolate", 32}
-{"Pollen", 64}
+{"Eggs", 1},
+{"Peanuts", 2},
+{"Shellfish", 4},
+{"Strawberries", 8},
+{"Tomatoes", 16},
+{"Chocolate", 32},
+{"Pollen", 64},
 {"Cats", 128}
 ```
 A user input of `"Chocolate"` is 32 which then the user's total score becomes 32. If the user inputs another allergen `"Pollen"`, their total score increments and becomes 96. 
