@@ -28,7 +28,7 @@ namespace Allergies.Models
       }
       return 0;
     }
-    public static int CalculateTotalAllergyScore(string allergy)
+    public int CalculateTotalAllergyScore(string allergy)
     {
       if (allergenScores.ContainsKey(allergy))
       {

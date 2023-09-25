@@ -25,8 +25,11 @@ namespace Allergies.Tests
     [TestMethod]
     public void CalculateTotalAllergyScore_IncrementsAllergyScorePerAllergenInput_Int()
     {
-      int userAllergyScore = AllergenScore.CalculateTotalAllergyScore("Eggs");
-      Assert.AreEqual(1, userAllergyScore);
+      AllergenScore userAllergenScore = new AllergenScore(); 
+      userAllergenScore.CalculateTotalAllergyScore("Eggs");
+      userAllergenScore.CalculateTotalAllergyScore("Pollen");
+      userAllergenScore.CalculateTotalAllergyScore("Cats");
+      Assert.AreEqual(193, AllergenScore.TotalAllergyScore);
     }
   }
 }
