@@ -18,7 +18,9 @@ namespace Allergies.Tests
     public void GetAllergyScore_ReturnsValueOfReferencedAllergenInput_Int()
     {
       int allergyScore = AllergenScore.GetAllergyScore("Eggs");
+      int allergyScore2 = AllergenScore.GetAllergyScore("Cats");
       Assert.AreEqual(1, allergyScore);
+      Assert.AreEqual(128, allergyScore2);
     }
   }
 }
